@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #F8F8F8;
+    font-family: roboto;
+}
+.header{
+width: 1329px;
+height: 100px;
+padding: 16px 30px 16px 30px;
+gap: 10px;
+opacity: 0px;
+align-items: center;
+z-index: 100;
+}
+
+
+/* Full-width background image with reduced opacity */
+.hero-section {
+    position: relative;
+    background-image: url('images/background.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* Overlay to reduce image opacity */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity here */
+    z-index: 1;
+}
+
+/* Text content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+
+
+/* ourgoal */
+.goals{
+    background-color:  #FFEEF5;
+    border: none;
+}
+.goals:hover{
+    background-color: #E13D7E;
+    color: white;
+}
+
+.goals h1{
+    color: #E13D7E;
+    margin-bottom: 10px;
+}
+.goals h5{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* our program */
+.program_overall{
+    position: relative;
+}
+.program{
+width: Hug (1,312px)px;
+height: 500px;
+padding: 96px 0px 0px 0px;
+gap: 0px;
+opacity: 0px;
+display: flex;
+
+}
+.program_right{
+width: 600px;
+background-image: url(images/our\ program.jpeg);
+background-size: 100% 100%;
+}
+.programs{
+    background: white;
+    width: 700px;
+    padding: 50px
+}
+.coll{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+}
+.collapse-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.collapse-btn .plus-sign {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.testimonial {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.testimonial p {
+    font-size: 16px;
+    font-style: italic;
+}
+.testimonial h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer{
+    padding: 100px 10px 10px 50px;
+}
+.footer1 p{
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+.list-group-item {
+    border: none;
+    background: none;
+    color: white;
+    text-align: center;
+    margin: 10px ;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.footer_apply{
+    background-color: #E13D7E;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    padding: 50px 70px 50px 70px;
+}
+.footer_apply h2{
+    color: white;
+    display: inline-block;
+}
+.footer_apply button{
+    color: #E13D7E;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+
+
+/* trending */
+.trend_img{
+    background: url(images/trending.jpg);
+    height: auto;
+    background-size: 100% 100%;
+}
+.color{
+    color: #E13D7E;
+}
+.button-color{
+    background-color: #E13D7E;
+    color: white;
+}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moremi Tech Stars</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style>
+    <style>
+                .toggle-btn::after {
+            content: '+';
+            float: right;
+            font-size: 1.5rem;
+        }
+        .collapse.show + .toggle-btn::after {
+            content: '-';
+        }
+        .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #E13D7E; 
+      border-radius: 50%;
+      padding: 10px;
+    }
+    .testimonial-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    body{
+      font-family: roboto;
+    }
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-row img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .image-row img:hover {
+            transform: scale(1.05);
+        }
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container d-flex justify-content-between align-items-center">
+          <!-- Logo on the Left -->
+          <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="Logo" width="150" height="300" class="img-fluid d-inline-block align-text-top">
+          
+          </a>
+
+          <!-- Centered Navbar Links -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="program.html">Programs</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="event.html">Tech Events</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Button on the Right -->
+          <a href="donate.html" class="btn" style="background-color: #E13D7E; color: white;">Donate</a>
+
+          <!-- Toggle Button for Mobile -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+  </nav>
+    <!-- landingpage -->
+    <!-- <section class="container-fluid mt-5">
+        <div class="container  text-center">
+           <div class="container-md" data-aos="fade-right" data-aos-easing="ease-in">
+                <h1>Building The Next <span class="color">Female</span>  Techstars</h1>
+                <p class="d-inline-block w-50">Moremi is committed to helping girls and women succeed in tech, and we believe that the future of tech is bright because of them.</p>
+                <div >
+                    <button class="btn" style="background: transparent; border-color: #E13D7E; color: #E13D7E;">Apply to program</button>
+                    <button class="btn" style="background-color: #E13D7E; color: white;">Become a partner</button>
+               </div>
+           </div>
+
+           <div data-aos-easing="ease-in" data-aos="fade-up">
+                <img src="images/landingpage.png" class="img-fluid" alt="">
+           </div>
+        </div>
+    </section> -->
+ 
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <!-- Overlay to reduce image opacity -->
+      <div class="hero-overlay"></div>
+
+      <!-- Text Content on the Image -->
+      <div class="hero-content mb-5">
+          <h1 class="fw-bold mb-3">Building The Next <span class="color">Female</span>  Techstars</h1>
+          <p class="fs-3 d-inline-block w-75 text-center">Moremi is committed to helping girls and women succeed in tech, and we believe that the future of tech is bright because of them.</p>
+          <div >
+              <button class="btn" style="background: transparent; border-color: #E13D7E; color: white;">Apply to program</button>
+              <button class="btn" style="background-color: #E13D7E; color: white;">Become a partner</button>
+         </div>
+      </div>
+  </div>
+
+
+    <!-- our goal -->
+
+    <section class="container-fluid mt-5">
+     <div class="container">
+        <div class="container goal_section1" data-aos="fade-right" data-aos-easing="ease-in">
+            <h1>Our Goals</h1>
+            <p>We are building the next female techstar</p>
+        </div>
+        <div class="container my-4">
+          <div class="row">
+            <div class="col-md-4 mb-4 " data-aos="zoom-in" data-aos-delay="00">
+              <div class="card goals" >
+                   <div class="card-body " style=" margin: 30px;">
+                  <h1 class="card-title">01</h1>
+                  <h5 class="card-title">Bridging the Gender Gap</h5>
+                  <p class="card-text">Empowering girls and women in embracing the technology of the future and advancing women in technology from the bootcamp to the workspace</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card goals">
+                <div class="card-body" style=" margin: 30px;">
+                  <h1 class="card-title">02</h1>
+                  <h5 class="card-title">Bridging the Gender Gap</h5>
+                  <p class="card-text">Moremi Techstars is a youth based social enterprise that uses ICT creatively to Improve the lives of girls and women in the community, Coding is the future. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+              <div class="card goals">
+                <div class="card-body" style=" margin: 30px;">
+                  <h1 class="card-title">03</h1>
+                  <h5 class="card-title">Bridging the Gender Gap</h5>
+                  <p class="card-text">Moremi Techstars mission is to close the gender gap and to help women embrace technology. Empowering African girls and women to  job opportunities</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    </section>
+
+    <!-- gallery -->
+  
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Our 2024 Session</h2>
+      <div class="row image-row">
+          <div class="col-12 col-md-4">
+              <img src="images/c1.jpg" alt="Impact Image 1">
+          </div>
+          <div class="col-12 col-md-4">
+              <img src="images/c2.jpg" alt="Impact Image 2">
+          </div>
+          <div class="col-12 col-md-4">
+              <img src="images/c3.jpg" alt="Impact Image 3">
+          </div>
+      </div>
+      <div class="row image-row">
+          <div class="col-12 col-md-4">
+              <img src="images/c4.jpg" alt="Impact Image 4">
+          </div>
+          <div class="col-12 col-md-4">
+              <img src="images/c5.jpg" alt="Impact Image 5">
+          </div>
+          <div class="col-12 col-md-4">
+              <img src="images/c6.jpg" alt="Impact Image 6">
+          </div>
+      </div>
+      <div class="row image-row">
+          <div class="col-12 col-md-4">
+              <img src="images/c7.jpg" alt="Impact Image 4">
+          </div>
+          <div class="col-12 col-md-4">
+              <img src="images/c8.jpg" alt="Impact Image 5">
+          </div>
+          <div class="col-12 col-md-4">
+              <img src="images/c9.jpg" alt="Impact Image 6">
+          </div>
+      </div>
+      <div class="row image-row">
+          <div class="col-12 col-md-4">
+              <img src="images/c10.jpg" alt="Impact Image 4">
+          </div>
+          <div class="col-12 col-md-4">
+              <img src="images/c11.jpg" alt="Impact Image 5">
+          </div>
+          <div class="col-12 col-md-4">
+              <img src="images/c.jpg" alt="Impact Image 6">
+          </div>
+      </div>
+  </div>
+
+
+
+    <!-- our program -->
+     <section class="position-relative" data-aos-easing="ease-in" data-aos="fade-left">
+        <div class="container d-flex w-100 h-100">
+            <div class="p-5 bg-dark">
+                <h1 class="text-white fs-3 fw-bold mb-5">Our Program</h1>
+                <p class="text-white fs-4 mb-5">Explore what we are offering</p>
+                <button class="btn" style="background-color: #E13D7E; color: white;">Apply now</button>
+            </div>
+            <div class="program_right">
+                <img src="images/our program.jpeg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="container shadow my-5 w-50 h-50 text-start position-absolute top-100 start-50 translate-middle">
+  
+          <!-- Toggle Button 1 -->
+          <div class="mb-3">
+              <button class="btn button-color btn-block w-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  MOREMI TECHJOBS
+              </button>
+              <div id="collapseOne" class="collapse mt-2">
+                  <div class="card card-body">
+                      MTJ is a job portal Leverage your professional network and skills, and get hired. Where we create first-class experiences for those seeking new job opportunities.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Toggle Button 2 -->
+          <div class="mb-3">
+              <button class="btn button-color w-100 btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  MOREMI FEMALE FOUNDERS IN TECH
+              </button>
+              <div id="collapseTwo" class="collapse mt-2">
+                  <div class="card card-body">
+                      MFFT is a mentoring and entrepreneurial powerhouse for female founders in tech. We provide access to mentorship, helping you gain new skills and jumpstart your career through our support of female entrepreneurs and seasoned professionals in technology.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Toggle Button 3 -->
+          <div class="mb-3">
+              <button class="btn button-color w-100 btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  MOREI TECHSTARS BOOTCAMP
+              </button>
+              <div id="collapseThree" class="collapse mt-2">
+                  <div class="card card-body">
+                      MTB is a female based social enterprise training that uses ICT creatively to improve the lives of aspiring females wanting to venture into tech, it’s our dream to transform the lives of girls and women with the 21st-century skills in technology.
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Toggle Button 4 -->
+          <div class="mb-3 w-100">
+              <button class="btn button-color w-100 btn-block" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  MOREMI TECHSTARS ACCELERATOR PROGRAM
+              </button>
+              <div id="collapseFour" class="collapse mt-2">
+                  <div class="card card-body">
+                      MTA is an event that provides a forum where graduates of MTB and other women and girls are tech enthusiast are giving the opportunities to our girls and women to pitch their ideas to potential investors in other to attracts funding, mentorship and support for their enterprise. We host talks or tech-related workshops through our MTA Talks event. It allows our mentees to progress through their tech journey more quickly, our accelerator programs include mentorship and educational components for public pitch.
+                  </div>
+              </div>
+          </div>
+      </div>
+     </section>
+
+     <!-- testimonial -->
+    <section style="margin-top: 250px; margin-bottom: 200px;">
+        <div class="text-center">
+            <h1>Testimonials</h1>
+            <p>See what they are saying about us</p>
+        </div>
+        <!-- <div id="testimonialCarousel " class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner bg-white w-50 h-50 text-center mx-auto" style=" padding: 20px 0px 200px 0px;">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center flex-column" style="height: 300px;">
+                  <img src="images/testimonial.jpeg" class="testimonial-image mb-4" alt="Person 1">
+                  <div class="text-center">
+                    <p class="mb-4" style="display: inline-block; width: 500px;">"The Moremi Tech Stars has truly transformed my career journey. As a woman trying to break into the tech industry, I often felt overwhelmed and out of place. But with the mentorship, training, and network I found here, I not only gained the technical skills I needed but also the confidence to pursue my dreams. The supportive community they’ve built is unmatched, empowering women to break barriers and excel in the tech space."</p>
+                    <h5>Badmus Olabisi</h5>
+                  </div>
+                  <div class="mt-3">
+                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center flex-column" style="height: 300px;">
+                  <img src="images/about2.jpg" class="testimonial-image mb-4" alt="Person 2">
+                  <div class="text-center">
+                    <p class="mb-4"style="display: inline-block; width: 500px;">""Joining Moremi Tech Stars was a game-changer for me. Before, I struggled to find opportunities and resources tailored for women in tech. This NGO filled that gap with hands-on workshops, career development programs, and an inspiring network of like-minded women. I went from feeling isolated to feeling empowered and ready to take on challenges in my tech career. I’m now mentoring others thanks to the platform they’ve given me."</p>
+                    <h5>Badmus Olabisi</h5>
+                  </div>
+                  <div class="mt-3">
+                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center flex-column" style="height: 300px;">
+                  <img src="images/about1.png" class="testimonial-image mb-4" alt="Person 3">
+                  <div class="text-center">
+                    <p class="mb-4" style="display: inline-block; width: 500px;">"What sets Moremi Tech Stars apart is their genuine commitment to uplifting women in tech. Their programs don’t just focus on technical skills; they also address personal growth, leadership, and networking—areas where women are often underrepresented. The team is passionate, and their dedication is visible in everything they do. Thanks to them, I’ve transitioned smoothly into a tech role and even secured a promotion within my first year!"</p>
+                    <h5>Temidayo Raji</h5>
+                  </div>
+                  <div class="mt-3">
+                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+                <!-- Testimonials Carousel -->
+        <div id="testimonialCarousel" class="carousel slide mb-5" data-ride="carousel">
+          <div class="carousel-inner">
+
+              <!-- First Testimonial -->
+              <div class="carousel-item active">
+                  <div class="d-flex flex-column align-items-center text-center">
+                      <img src="images/about1.png" class="rounded-circle mb-3" alt="Client 1" width="100" height="100">
+                      <p class="font-italic d-inline-block w-75">"The Moremi Tech Stars has truly transformed my career journey. As a woman trying to break into the tech industry, I often felt overwhelmed and out of place. But with the mentorship, training, and network I found here, I not only gained the technical skills I needed but also the confidence to pursue my dreams. The supportive community they’ve built is unmatched, empowering women to break barriers and excel in the tech space."</p>
+                      <h5 class="font-weight-bold">- Badmus Olabisi</h5>
+                  </div>
+              </div>
+
+              <!-- Second Testimonial -->
+              <div class="carousel-item">
+                  <div class="d-flex flex-column align-items-center text-center">
+                      <img src="images/about2.jpg" class="rounded-circle mb-3" alt="Client 2" width="100" height="100">
+                      <p class="font-italic d-inline-block w-75">"Joining Moremi Tech Stars was a game-changer for me. Before, I struggled to find opportunities and resources tailored for women in tech. This NGO filled that gap with hands-on workshops, career development programs, and an inspiring network of like-minded women. I went from feeling isolated to feeling empowered and ready to take on challenges in my tech career. I’m now mentoring others thanks to the platform they’ve given me."</p>
+                      <h5 class="font-weight-bold">- Temidayo Raji</h5>
+                  </div>
+              </div>
+
+              <!-- Third Testimonial -->
+              <div class="carousel-item">
+                  <div class="d-flex flex-column align-items-center text-center">
+                      <img src="images/about1.png" class="rounded-circle mb-3" alt="Client 3" width="100" height="100">
+                      <p class="font-italic w-75 d-inline-block">"What sets Moremi Tech Stars apart is their genuine commitment to uplifting women in tech. Their programs don’t just focus on technical skills; they also address personal growth, leadership, and networking—areas where women are often underrepresented. The team is passionate, and their dedication is visible in everything they do. Thanks to them, I’ve transitioned smoothly into a tech role and even secured a promotion within my first year!"</p>
+                      <h5 class="font-weight-bold">- Alice Johnson</h5>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
+    </section>
+    <footer class="container-fluid w-auto d-flex justify-content-between align-items-center bg-dark position-relative mt-5">
+      <div class="container mt-5 footer1">
+        <img src="images/logo.png" alt="" style="width: 200px; height:70px;">
+        <p>Bridging the Gap in tech industry by enpowering girls and women with skills and confindence they need to succeed in tech related field.</p>
+      </div>
+      <div class="container mt-5">
+        <div class="list-group">
+            <a href="index.html" class="list-group-item list-group-item-action">Home</a>
+            <a href="about.html" class="list-group-item list-group-item-action">About Us</a>
+            <a href="event.html" class="list-group-item list-group-item-action">Tech Events</a>
+        </div>
+    </div>
+      <div class="container mt-5">
+        <div class="list-group">
+            <a href="program.html" class="list-group-item list-group-item-action">Our Program</a>
+            <a href="contact.html" class="list-group-item list-group-item-action">Contact Us</a>
+            <a href="#" class="list-group-item list-group-item-action">Donate</a>
+        </div>
+    </div>
+    <div class="container footer_apply position-absolute top-0 start-50 translate-middle z-1000000" >
+      <h2>Become The Next Female Techstars Now</h2>
+      <a href="apply.html"></a><button>Apply to program</button>
+    </div>
+    </footer>
+
+
+        <!-- AOS JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+              $('.collapse-btn').click(function() {
+                  $(this).find('.plus-sign').text($(this).find('.plus-sign').text() == '+' ? '-' : '+');
+              });
+          </script>
+      </body>
+    
+        <!-- Bootstrap JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</body>
+</html>
